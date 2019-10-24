@@ -42,6 +42,12 @@ on_btn_hello_clicked()
 	gtk_label_set_text(GTK_LABEL(g_lbl_count), str_count);
 }
 
+void
+on_btn_close_clicked()
+{
+	gtk_main_quit();
+}
+
 /* called when window is closed */
 void
 on_window_main_destroy()
