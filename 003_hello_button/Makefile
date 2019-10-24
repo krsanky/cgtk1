@@ -1,4 +1,4 @@
-TARGET=template_app
+TARGET=hello
 #CC=gcc
 DEBUG=-g
 OPT=-O0
