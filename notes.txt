@@ -1,7 +1,8 @@
-FReebsd comment:
-cc `pkgconf -cflags gtk+-3.0` main.c -o gladewin `pkgconf -libs gtk+-3.0` -rdynamic -Wall
-
 example-1.c:
 cc `pkg-config --cflags gtk+-3.0` -o example-1 example-1.c `pkg-config --libs gtk+-3.0`
       
+main.c: (use freebsd comment version)
+cc -o gladewin main.c -Wall `pkg-config --cflags --libs gtk+-3.0` -export-dynamic
+FReebsd comment:
+cc `pkgconf -cflags gtk+-3.0` main.c -o gladewin `pkgconf -libs gtk+-3.0` -rdynamic -Wall
 
